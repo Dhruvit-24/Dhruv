@@ -1,0 +1,5 @@
+{
+    "git.ignoreLimitWarning": true,
+    "mui-snippets.importPaths": "second level",
+    "typescript.preferences.preferTypeOnlyAutoImports": true
+}
