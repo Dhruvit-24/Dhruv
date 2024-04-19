@@ -31,17 +31,16 @@ const Section2 = () => {
         <>
             <Grid container spacing={2} justifyContent="center" sx={{ width: '100%', mt: '50px' }}>
                 {data.map((item, index) => (
-                    // Adjusted Grid item to ensure proper alignment and structure
                     <Grid key={index} item xs={12} sm={6} md={4} lg={4} xl={3} display="flex" justifyContent="center">
                         <Card sx={{
-                            width: '100%', // Ensure card takes the full width of the grid item
-                            maxWidth: 345, // Set a maximum width to prevent the card from stretching on larger screens
+                            width: '100%',
+                            maxWidth: 345,
                             display: 'flex',
                             flexDirection: 'column',
                             bgcolor: 'rgba(218, 197, 167, 0.05)',
                             border: '1px solid',
                             justifyContent: 'center',
-                            m: 2 // Add margin to ensure cards don't touch each other on wrap
+                            m: 2
                         }}>
                             <CardContent>
                                 <Typography sx={{ color: '#DAC5A7' }}>

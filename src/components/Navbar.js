@@ -11,14 +11,19 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Menu } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const pages = [
-        { title: 'Services' },
-        { title: 'Work' },
-        { title: 'About' },
-        { title: 'Blog' },
-        { title: 'Pages' },
+        { title: 'Services', path: '/service' },
+        { title: 'About', path: '/about' },
+        { title: 'Contact', path: '/contact' },
+        { title: 'Work', path: '/work' },
+        { title: 'WorkSingle', path: '/worksingle' },
+        { title: 'Blog', path: '/blog' },
+        { title: 'Blog Single', path: '/blogsingle' },
+        { title: 'Pricing', path: '/pricing' },
+
     ];
 
     const isMobileView = useMediaQuery('(max-width:600px)');
@@ -38,7 +43,7 @@ const Navbar = () => {
     };
 
     return (
-        <Grid sx={{ width: '100%', bgcolor: 'black' }}>
+        <Grid sx={{ width: '100%', bgcolor: 'black' }} md={6}>
             <AppBar position="static" sx={{ bgcolor: 'black' }}>
                 <Toolbar>
                     <Grid container alignItems="center" justifyContent="space-between">
@@ -51,7 +56,7 @@ const Navbar = () => {
                                 <Grid container spacing={2} sx={{ textAlign: 'center' }}>
                                     {pages.map((page, index) => (
                                         <Grid item key={index}>
-                                            <Button sx={{ color: '#DAC5A7' }}>{page.title}</Button>
+                                            <Link to={page.path}><Button sx={{ color: '#DAC5A7' }}>{page.title}</Button></Link>
                                         </Grid>
                                     ))}
                                 </Grid>
@@ -64,13 +69,13 @@ const Navbar = () => {
             <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer} sx={{ color: 'black' }}>
                 <List>
                     {pages.map((page, index) => (
-                        <ListItem key={index} onClick={toggleDrawer}>
+                        <ListItem button key={index} onClick={toggleDrawer} component={Link} to={page.path}>
                             <ListItemText primary={page.title} />
                         </ListItem>
                     ))}
                 </List>
             </Drawer>
-        </Grid >
+        </Grid>
     );
 };
 

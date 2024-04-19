@@ -8,6 +8,7 @@ import Section3 from '../Front_container/Section3'
 import Section4 from '../Front_container/Section4'
 import Section5 from '../Front_container/Section5'
 import Section6 from '../Front_container/Section6'
+import Section7 from '../Front_container/Section7'
 
 const Frontpage = () => {
     return (
@@ -22,6 +23,7 @@ const Frontpage = () => {
             <Section4 />
             <Section5 />
             <Section6 />
+            <Section7 />
             {/* footer */}
             <Footer />
 

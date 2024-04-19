@@ -53,11 +53,11 @@ const Section6 = () => {
         }
 
     ]
-    const leftColumnData = data.slice(0, 3);
-    const rightColumnData = data.slice(3, 6);
+    // const leftColumnData = data.slice(0, 3);
+    // const rightColumnData = data.slice(3, 6);
     return (
         <>
-            <Grid container spacing={2} justifyContent="center" mt={5}>
+            <Grid container spacing={2} justifyContent="center" mt='50px'>
                 {/* Title and Description */}
                 <Grid item xs={12}>
                     <Typography variant="h1" sx={{ color: '#DAC5A7', textAlign: 'center' }}>
@@ -70,10 +70,10 @@ const Section6 = () => {
                 </Grid>
 
                 {/* Left Side Cards */}
-                <Grid item container xs={12} md={6} direction="column" alignItems="center" spacing={2}>
+                <Grid item container xs={12} md={6} direction="column" alignItems="center" spacing={5}>
                     {data.slice(0, 3).map((item, index) => (
                         <Grid item key={index}>
-                            <Card sx={{ width: '584px', height: '100%', bgcolor: 'rgba(218, 197, 167, 0.05)', border: '1px solid', borderRadius: '5px' }}>
+                            <Card sx={{ width: '100%', height: '100%', bgcolor: 'rgba(218, 197, 167, 0.05)', border: '1px solid', borderRadius: '5px' }}>
                                 <CardContent>
                                     <Typography sx={{ color: '#DAC5A7', mt: '10px' }}>{item.title}</Typography>
                                     <Typography sx={{ color: '#DAC5A7', mt: '20px' }}>{item.desc}</Typography>
@@ -90,7 +90,7 @@ const Section6 = () => {
                 <Grid item container xs={12} md={6} direction="column" alignItems="center" spacing={5}>
                     {data.slice(3, 6).map((item, index) => (
                         <Grid item key={index}>
-                            <Card sx={{ width: '584px', height: '100%', bgcolor: 'rgba(218, 197, 167, 0.05)', border: '1px solid', borderRadius: '5px' }}>
+                            <Card sx={{ width: '100%', height: '100%', bgcolor: 'rgba(218, 197, 167, 0.05)', border: '1px solid', borderRadius: '5px' }}>
                                 <CardContent>
                                     <Typography sx={{ color: '#DAC5A7', mt: '10px' }}>{item.title}</Typography>
                                     <Typography sx={{ color: '#DAC5A7', mt: '20px' }}>{item.desc}</Typography>
