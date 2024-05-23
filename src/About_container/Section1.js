@@ -27,7 +27,7 @@ const Section1 = () => {
 
     return (
         <>
-            <Container>
+            <Container sx={{ mt: 4 }}>
                 <Grid container display='flex' alignItems="center" justifyContent="space-between">
                     <Grid item xs={12} md={6} sx={{ textAlign: 'center' }}>
                         <img src={img} style={{ maxWidth: '100%', height: 'auto' }} alt="Dhruvit's Image" />
@@ -72,7 +72,7 @@ const Section1 = () => {
                         </Container>
                     </Grid>
 
-                    <Grid container justifyContent='flex-end' sx={{ mt: 5 }}>
+                    <Grid container sx={{ mt: 5 }}>
                         {data2.map((item, index) => (
                             <React.Fragment key={index}>
                                 <Grid item xs={12} display='flex' justifyContent='center'>

@@ -11,15 +11,19 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const Footer = () => {
     return (
         <>
-            <Grid container display='flex' justifyContent='center' mt={4}>
+            <Grid container display='flex' justifyContent='center' >
                 <Grid item display='flex' flexDirection='column' md={6}>
                     <Typography sx={{ color: 'rgba(218, 197, 167, 1)', textAlign: 'center' }}>Project in mind?</Typography>
                     <Typography variant='h1' sx={{ color: 'rgba(218, 197, 167, 1)', textAlign: 'center' }}>Let’s make your
                         Website shine</Typography>
-                    <Typography sx={{ color: 'rgba(218, 197, 167, 1)', textAlign: 'center' }}>Premium web design, webflow, and SEO services to help your business stand out.</Typography>
+                    <Typography sx={{ color: 'rgba(218, 197, 167, 1)', textAlign: 'center' }}>Premium web design, webflow, and SEO services to <br /> help your business stand out.</Typography>
+                </Grid>
+                <Grid md={12} display='flex' justifyContent='center' mt={4}>
+                    <Button sx={{ bgcolor: 'rgba(218, 197, 167, 1)', color: 'black', }}>Get In Touch <ArrowForwardIcon /> </Button>
                 </Grid>
 
                 <Grid item container display='flex' flexDirection='row' justifyContent='center' mt={4} spacing={20} >
+
                     <Grid item display='flex' flexDirection='column' ml={10} gap={3} alignItems='center'>
                         <Grid item display='flex' flexDirection='row' gap={1} alignItems='center'>
                             <InstagramIcon sx={{ color: 'rgba(218, 197, 167, 1)' }} />
@@ -56,6 +60,7 @@ const Footer = () => {
                             <Button sx={{ bgcolor: 'rgba(218, 197, 167, 1)', color: 'black' }}>More Templates <ArrowForwardIcon /> </Button>
                         </Grid>
                     </Grid>
+
                     <Grid item display='flex' flexDirection='column' ml={4} gap={3} alignItems='center' sx={{ mr: '6' }}>
                         <Typography sx={{ color: 'rgba(218, 197, 167, 1)' }} variant='h4'>CMS</Typography>
                         <Grid item display='flex' flexDirection='row' gap={1} alignItems='center'>
@@ -71,6 +76,7 @@ const Footer = () => {
                             <Typography sx={{ color: 'rgba(218, 197, 167, 1)' }}>Contact</Typography>
                         </Grid>
                     </Grid>
+
                     <Grid item display='flex' flexDirection='column' ml={4} gap={3} alignItems='center' sx={{ mr: '6' }}>
                         <Typography sx={{ color: 'rgba(218, 197, 167, 1)' }} variant='h4'>Utility Pages</Typography>
                         <Grid item display='flex' flexDirection='row' gap={1} alignItems='center'>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Card, Typography, CardContent, Avatar } from "@mui/material";
+import { Grid, Card, Typography, CardContent, Avatar, Container } from "@mui/material";
 import img1 from '../asset/img1.png'
 import img2 from '../asset/img2.png'
 import img3 from '../asset/img3.png'
@@ -102,6 +102,7 @@ const Section6 = () => {
                         </Grid>
                     ))}
                 </Grid>
+
             </Grid>
         </>
     );

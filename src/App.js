@@ -12,7 +12,7 @@ import Box from '@mui/material/Box';
 
 function App() {
   return (
-    <Box sx={{ color: '#161617', height: '100vh' }}>
+    <Box >
       <Router>
         <Routes>
           <Route path="/" element={<Frontpage />} />

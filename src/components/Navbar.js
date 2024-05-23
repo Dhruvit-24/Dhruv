@@ -44,11 +44,11 @@ const Navbar = () => {
 
     return (
         <Grid sx={{ width: '100%', bgcolor: 'black' }} md={6}>
-            <AppBar position="static" sx={{ bgcolor: 'black' }}>
+            <AppBar position='fixed' sx={{ bgcolor: 'black' }}>
                 <Toolbar>
                     <Grid container alignItems="center" justifyContent="space-between">
                         <Grid item>
-                            <Typography variant="h6" component="div" sx={{ color: '#DAC5A7' }}>Dhruvit</Typography>
+                            <Link to='/' style={{ textDecoration: 'none' }} ><Typography variant="h6" component="div" sx={{ color: '#DAC5A7', }}>Dhruvit</Typography></Link>
                         </Grid>
                         <Grid item>
                             {renderMenuButton()}
@@ -66,10 +66,10 @@ const Navbar = () => {
                 </Toolbar>
             </AppBar>
 
-            <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer} sx={{ color: 'black' }}>
+            <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer} sx={{ bgcolor: 'black' }}>
                 <List>
                     {pages.map((page, index) => (
-                        <ListItem button key={index} onClick={toggleDrawer} component={Link} to={page.path}>
+                        <ListItem key={index} onClick={toggleDrawer} component={Link} to={page.path}>
                             <ListItemText primary={page.title} />
                         </ListItem>
                     ))}

@@ -12,7 +12,7 @@ const Section1 = () => {
     ]
 
     return (
-        <Grid container display='flex' justifyContent='center' >
+        <Grid container display='flex' justifyContent='center' sx={{ mt: 8 }} >
             <Grid item justifyContent='center' md={6}>
                 <Typography variant='h1' sx={{ color: '#DAC5A7', textAlign: 'center' }}>Web Design
                     & Framer</Typography>

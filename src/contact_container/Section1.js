@@ -16,7 +16,7 @@ const Section1 = () => {
     ];
 
     return (
-        <Container sx={{ mt: '50px' }}>
+        <Container sx={{ mt: 10 }}>
             <Grid container spacing={2}>
                 <Grid item xs={6}>
                     <img src={img} alt="Image" style={{ width: '100%' }} />
@@ -55,7 +55,7 @@ const Section1 = () => {
                         <Card sx={{ height: '100px', width: '100%', bgcolor: 'rgba(218, 197, 167, 0.15)', alignItems: 'center', justifyContent: 'center' }}>
                             <CardMedia
                                 component={item.icon}
-                                sx={{ fontSize: 50, alignContent: 'center' }}
+                                sx={{ fontSize: 50, alignContent: 'center', color: '#DAC5A7' }}
                             />
                             <CardContent>
                                 <Typography variant="body2" color='#DAC5A7' textAlign='center'>
